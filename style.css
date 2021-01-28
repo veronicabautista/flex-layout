@@ -1,0 +1,263 @@
+html {
+  color: #161616;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+  Aqui tu código
+========================================================================== */
+
+
+/* Común a toda la web */ 
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  width: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a, a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  height: 65px;
+  width: 256px;
+  border-radius: 30px;
+  color: #fff;
+  border:none;
+  font-size: 1.2em;
+  outline: none;
+}
+
+
+/* Secció presentación */ 
+
+.section-1 {
+  height: 640px;
+  background: url("./assets/puente-sm.jpg") left no-repeat;
+  background-size: auto 100vh;
+}
+
+.section-1-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 30px 0px 30px;
+}
+
+.section-1-intro h1{
+  font-size: 45px;
+  color: #fff;
+  margin: 28px 0px;
+}
+
+.section-1-intro hr {
+  height: 10px;
+  width: 256px;
+  background-color: #ff5700;
+  border:none;
+}
+
+.section-1-intro p {
+  margin: 55px 0 60px;
+  font-size: 17px;
+}
+
+.section-1-intro button {
+  background-color: #ff5700;
+}
+
+/* Secciones comunes */ 
+
+.section-2, .section-3, .section-4 {
+  background-color: #000;
+  color: #fff;
+}
+
+.section-img {
+  width: 100vw;
+}
+
+.section-text {
+  height: 320px;
+}
+
+.section-text .section-icon {
+  height: 70px;
+  width: 70px;
+  padding-top: 50px
+}
+
+.section-text p {
+  text-align: left;
+  font-size: 18px;
+  padding: 30px;
+}
+
+/* Sección contacto */ 
+
+.section-contact {
+  height: 470px;
+  background-color: #ff5700;
+  color: #fff;
+  padding: 0px 30px;
+}
+
+.section-contact p{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 80px 0px 60px;
+}
+
+.section-contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-contact form input[type="email"] {
+  height: 65px;
+  width: 300px; 
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  padding-left: 25px;
+}
+
+.section-contact form input:focus {
+  outline: none;
+}
+
+.section-contact form input::placeholder{
+  color: #ffd7bf;
+}
+
+.section-contact button {
+  background-color: #000;
+}
+
+
+/* Footer */
+
+footer{
+  padding: 48px 30px 43px;
+  font-size: 14px;
+}
+
+footer img{
+  width: 128px;
+}
+
+
+/* Versión Desktop */
+@media (min-width: 700px) {
+  .content{
+    max-width: 1200px;
+  }
+  .section-1 {
+    margin-top: 70px;
+    background: url("./assets/puente-lg.jpg") no-repeat;
+    height: 683px;
+  }
+
+  .section-1-intro {
+    padding: 70px 242px;
+  }
+
+  .section-1-intro h3{
+    font-size: 19px;
+    letter-spacing: 2px;
+  }
+
+  .section-1-intro h1{
+    font-size: 90px;
+    margin: 10px 0px 53px 0px;
+  }
+  
+  .section-1-intro p {
+    margin: 58px 0 70px;
+    font-size: 22px;
+  }
+
+  .section-2, .section-3, .section-4 {
+    display: flex;
+  }
+
+  .section-3 {
+    flex-direction: row-reverse;
+  }
+
+  .section-img {
+    width: 600px;
+  }
+
+  .section-text {
+    width: 600px;
+  }
+
+  .section-text p{
+    font-size: 23px;
+    padding: 25px 105px 0px 105px
+  }
+
+  .section-contact {
+    width: 1200px;
+    height: 383px;
+    padding: 0;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .section-contact p{
+    font-size: 32px;
+    padding: 80px 245px;
+  }
+
+  .section-contact form {
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0px 208px;
+  }
+
+  .section-contact form input[type="email"] {
+    width: 512px;
+  }
+
+  .sk-cube-grid {
+    margin-top: 17px;
+  }
+
+  footer{
+    display: flex;
+    align-items: center;
+    padding: 30px 58px 30px 0px;
+    font-size: 16px;
+  }
+
+  footer p{
+    text-align: left;
+  }
+
+}
